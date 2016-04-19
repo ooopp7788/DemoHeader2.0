@@ -1,0 +1,46 @@
+.scrollPic {
+  width: 100%;
+  min-width: 1200px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  list-style-type: none;
+  .page-btn {
+    float: left;
+    width: auto;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 30;
+    .current {
+      background-color: #1D5D76;
+      opacity: 1;
+    }
+    span {
+      opacity: 0.7;
+      height: 30px;
+      width: 30px;
+      background-color: #999;
+      display: block;
+      float: left;
+      line-height: 30px;
+      text-align: center;
+      color: #FFF;
+      margin-right: 10px;
+      cursor:pointer;
+    }
+  }
+  ul {
+    width: 500%;
+    height: 400px;
+    position: relative;
+    li {
+      width: 20%;
+      height: 400px;
+      float:left;
+      display: block;
+      list-style-type: none;
+    }
+  }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>搜索</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <link href="css/search.css" rel="stylesheet">
+    <link href="css/ico.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-mask">
+        <div class="login-container">
+            <div class="login-window">
+                <span class="login-close" onclick="$('.login-mask').hide()">X</span>
+                <form action="" autocomplete="off">
+                    账号：&nbsp;<input type="text" class="userid" onfocus="if(this.value=='请输入用户名/手机号'){this.value=''}" onblur="if(this.value==''){this.value='请输入用户名/手机号'}" value="请输入用户名/手机号" /><br/>
+                    密码：&nbsp;<input type="text" class="password" onfocus="if(this.value=='请输入密码'){this.value=''}" onblur="if(this.value==''){this.value='请输入密码'}" value="请输入密码"/><br/>
+                    <input class="submit-btn" type="button" value="登录" onclick="window.location.href='person-page.html';return false;">
+                    <a href="#">忘记密码</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" title="LOGO">
+                </a>
+            </div>
+            <ul class="top">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <span>课程</span>
+                    <ul class="sort-list">
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login-panel">
+                <div class="logpre">
+                    <ul>
+                        <li class="login-model">
+                            <a href="#" class="login-btn" onclick="$('.login-mask').show();return false;">登录</a>
+                        </li>
+                        <li>
+                            <a href="#" class="register">注册</a>
+                        </li>
+                        <li>
+                            <a href="#" title="帮助" target="_blank">帮助</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logafter inactive">
+                    <ul>
+                        <li>
+                            <a href="person-page.html" class="username">张三</a>
+                        </li>
+                        <li>
+                            <a href="#">消息(<span class="messagenum">5</span>)</a>
+                        </li>
+                        <li>
+                            <a href="#" class="logout">注销</a>
+                        </li>
+                        <li>
+                            <a href="#" title="帮助" target="_blank">帮助</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-panel">
+                <input autocomplete="off" class="search-input" onfocus="if(this.value=='请输入搜索内容'){this.value=''}" onblur="if(this.value==''){this.value='请输入搜索内容'}" value="请输入搜索内容" type="text" />
+                <span class="ico ico-search-ico" onclick="search_click_handler();"></span>
+                <script type="text/javascript">
+                    function search_click_handler(){
+                        var $s_input = $(".search-input");
+                        if($s_input.val() == '请输入搜索内容'){
+                            if($s_input.css("width") == "0px"){
+                                $s_input.animate({
+                                    "width": "150px"
+                                },500);
+                            } else{
+                                $s_input.animate({
+                                    "width": "0px"
+                                },500);
+                            }
+                        } else{
+                            window.location.href="search.html";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="nav">
+        <div class="container">
+            <div class="nav-inner">
+                <ul class="nav1" style="color: #000;">
+                    <li class="active"><a title="全部" href="#">全部</a></li>
+                    <li><a title="" href="#">分类1</a></li>
+                    <li><a title="" href="#">分类2</a></li>
+                    <li><a title="" href="#">分类3</a></li>
+                    <li><a title="" href="#">分类4</a></li>
+                    <li><a title="" href="#">分类5</a></li>
+                    <li><a title="" href="#">分类6</a></li>
+                    <li><a title="" href="#">分类7</a></li>
+                    <li><a title="" href="#">分类1</a></li>
+                    <li><a title="" href="#">分类2</a></li>
+                    <li><a title="" href="#">分类3</a></li>
+                    <li><a title="" href="#">分类4</a></li>
+                    <li><a title="" href="#">分类5</a></li>
+                    <li><a title="" href="#">分类6</a></li>
+                    <li><a title="" href="#">分类7</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <div class="search-top">
+        <div class="container">
+            <form method="post" class="navbar-search" action="">
+                <input name="SearchKeyWord" class="search-query" placeholder="请输入视频名称或知识点" autocomplete="off" type="text">
+                <input value="搜    索" class="search-button" type="submit">
+            </form>
+        </div>
+    </div>
+    <div class="search-content">
+        <div class="list-box">
+            <ul class="list">
+                <li class="course-one">
+                    <a href="play.html">
+                        <div class="thumbnail"><img src="images/1-1.jpg" alt="缩略图"/></div>
+                    </a>
+                    <div class="caption">
+                        <b>课程名称：</b><span>电商培训之如何使用平台</span><br/>
+                        <b>课程时长：</b><span>35分钟</span><br/>
+                        <b>课程简介：</b><span class="video-ifo">电子商务通常是指在全球各地广泛的商业贸易活动中，在因特网开放的网络环境下，基于浏览器/服务器应用方式，买卖双方不谋面地进行各种商贸活动，实现消费者的网上购物、商户之间的网上交易和在线电子支付以及各种商务活动、交易活动、金融活动和相关的综合服务活动的一种新型的商业运营模式。</span>
+                    </div>
+                </li>
+                <li class="course-one">
+                    <a href="play.html">
+                        <div class="thumbnail"><img src="images/1-1.jpg" alt="缩略图"/></div>
+                    </a>
+                    <div class="caption">
+                        <b>课程名称：</b><span>电商培训之如何使用平台</span><br/>
+                        <b>课程时长：</b><span>35分钟</span><br/>
+                        <b>课程简介：</b><span class="video-ifo">电子商务通常是指在全球各地广泛的商业贸易活动中，在因特网开放的网络环境下，基于浏览器/服务器应用方式，买卖双方不谋面地进行各种商贸活动，实现消费者的网上购物、商户之间的网上交易和在线电子支付以及各种商务活动、交易活动、金融活动和相关的综合服务活动的一种新型的商业运营模式。</span>
+                    </div>
+                </li>
+                <li class="course-one">
+                    <a href="play.html">
+                        <div class="thumbnail"><img src="images/1-1.jpg" alt="缩略图"/></div>
+                    </a>
+                    <div class="caption">
+                        <b>课程名称：</b><span>电商培训之如何使用平台</span><br/>
+                        <b>课程时长：</b><span>35分钟</span><br/>
+                        <b>课程简介：</b><span class="video-ifo">电子商务通常是指在全球各地广泛的商业贸易活动中，在因特网开放的网络环境下，基于浏览器/服务器应用方式，买卖双方不谋面地进行各种商贸活动，实现消费者的网上购物、商户之间的网上交易和在线电子支付以及各种商务活动、交易活动、金融活动和相关的综合服务活动的一种新型的商业运营模式。</span>
+                    </div>
+                </li>
+                <li class="course-one">
+                    <a href="play.html">
+                        <div class="thumbnail"><img src="images/1-1.jpg" alt="缩略图"/></div>
+                    </a>
+                    <div class="caption">
+                        <b>课程名称：</b><span>电商培训之如何使用平台</span><br/>
+                        <b>课程时长：</b><span>35分钟</span><br/>
+                        <b>课程简介：</b><span class="video-ifo">电子商务通常是指在全球各地广泛的商业贸易活动中，在因特网开放的网络环境下，基于浏览器/服务器应用方式，买卖双方不谋面地进行各种商贸活动，实现消费者的网上购物、商户之间的网上交易和在线电子支付以及各种商务活动、交易活动、金融活动和相关的综合服务活动的一种新型的商业运营模式。</span>
+                    </div>
+                </li>
+                <li class="course-one">
+                    <a href="play.html">
+                        <div class="thumbnail"><img src="images/1-1.jpg" alt="缩略图"/></div>
+                    </a>
+                    <div class="caption">
+                        <b>课程名称：</b><span>电商培训之如何使用平台</span><br/>
+                        <b>课程时长：</b><span>35分钟</span><br/>
+                        <b>课程简介：</b><span class="video-ifo">电子商务通常是指在全球各地广泛的商业贸易活动中，在因特网开放的网络环境下，基于浏览器/服务器应用方式，买卖双方不谋面地进行各种商贸活动，实现消费者的网上购物、商户之间的网上交易和在线电子支付以及各种商务活动、交易活动、金融活动和相关的综合服务活动的一种新型的商业运营模式。</span>
+                    </div>
+                </li>
+                <li class="course-one">
+                    <a href="play.html">
+                        <div class="thumbnail"><img src="images/1-1.jpg" alt="缩略图"/></div>
+                    </a>
+                    <div class="caption">
+                        <b>课程名称：</b><span>电商培训之如何使用平台</span><br/>
+                        <b>课程时长：</b><span>35分钟</span><br/>
+                        <b>课程简介：</b><span class="video-ifo">电子商务通常是指在全球各地广泛的商业贸易活动中，在因特网开放的网络环境下，基于浏览器/服务器应用方式，买卖双方不谋面地进行各种商贸活动，实现消费者的网上购物、商户之间的网上交易和在线电子支付以及各种商务活动、交易活动、金融活动和相关的综合服务活动的一种新型的商业运营模式。</span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>©Copyright2004-2014 北京信立东方科技有限公司 京ICP备12039449</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+.main{
+  .player{
+    height: 645px;
+    background-color: #222;
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+      height: 600px;
+      .title{
+        padding: 10px;
+        color: #cdcdcd;
+      }
+      .player-box{
+        .player-left{
+          width: 930px;
+          height: 560px;
+          float: left;
+        }
+        .player-right{
+          width: 250px;
+          height: 560px;
+          float: right;
+          background-color: #fff;
+          margin: 0 10px;
+          overflow: auto;
+          .course-all {
+            width: 230px;
+            float: left;
+            overflow: hidden;
+            background-color: #ededed;
+            ul {
+              float: left;
+              width: 230px;
+              li {
+                width: 200px;
+                height: 120px;
+                padding: 4px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                margin: 10px;
+                a {
+                  img {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .widgets{
+      width: 1200px;
+      margin: 10px auto;
+      color: #fff;
+      font-family: "Boring Boron";
+      font-size: 14px;
+      span{
+        float: left;
+        height: 20px;
+        margin: 0 5px;
+      }
+      .upvote, .favorite{
+        margin: 0 25px;
+        float: left;
+      }
+    }
+  }
+  .ifo{
+    background-color: #eeeeee;
+    display: block;
+    .container{
+      width: 1200px;
+      display: table;
+      margin: 0 auto;
+      padding: 10px;
+      .ifo-left{
+        width: 350px;
+        display: table;
+        float: left;
+        .info-col1{
+          line-height: 20px;
+          display: block;
+          float: left;
+          padding-left: 20px;
+          width: 170px;
+          .ico{
+            display: inline-block;
+            top: 3px;
+          }
+        }
+        .info-col2{
+          line-height: 2em;
+          width: 120px;
+          padding-right: 10px;
+          float: right;
+          display: block;
+        }
+      }
+      .ifo-right{
+        width: 780px;
+        float: left;
+        padding: 0 30px;
+        border-left: 1px solid #999;
+        .comment-sub {
+          display: inline-block;
+          float: right;
+          padding-top: 5px;
+          input {
+            display: block;
+            background-color: #0f99da;
+            outline: none;
+            border-style: none;
+            padding: 5px 10px;
+            border-radius: 2px;
+          }
+        }
+        .comment-text {
+          h4 {
+            padding: 10px;
+            border-bottom: 1px solid #999;
+          }
+          .default-text {
+            border: 1px solid #999;
+            max-width: 780px;
+            min-width: 780px;
+            max-height: 100px;
+            min-height: 100px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@h:200px;
+.course-list{
+  padding: 15px 0;
+  width: 1200px;
+  margin: 0 auto;
+  height: @h;
+  .prev-btn{
+    width: 56px;
+    height: 87px;
+    float: left;
+    padding: 31px 0;
+    img{
+      width: 56px;
+      height: 87px;
+    }
+  }
+  .next-btn{
+    width: 56px;
+    height: 87px;
+    float: right;
+    overflow: hidden;
+    padding: 31px 0;
+    img{
+      width: 56px;
+      height: 87px;
+      -webkit-transform:rotate(180deg);
+      -moz-transform:rotate(180deg);
+      -o-transform:rotate(180deg);
+      transform:rotate(180deg);
+    }
+  }
+  .course-all{
+    height: 150px;
+    width: 1020px;
+    margin: 0 30px;
+    float: left;
+    overflow: hidden;
+    background-color: #ededed;
+    ul{
+      height: 150px;
+      margin: 0 10px;
+      float: left;
+      li{
+        width: 200px;
+        height: 120px;
+        padding: 4px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin:10px 20px;
+        display: block;
+        float: left;
+        a{
+          img{
+          }
+        }
+      }
+    }
+  }
+}

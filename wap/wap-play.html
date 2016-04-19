@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>Document</title>
+	<link href="../css/wap/player.css" rel="stylesheet">
+	<link href="../css/base.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="chat-panel">
+		<input class="input" type="text" autocomplete="off" value="请输入聊天内容" />
+		<input type="submit" autocomplete="off" onclick=""/>
+	</div>
+	<div class="container">
+		<div class="header">
+			<h3>课程标题</h3>
+		</div>
+		<div class="main">
+			<h3></h3>
+			<div class="player" id="player">
+				<video class="player_html5" controls="controls" src="../video/video.mp4"></video>
+			</div>
+		</div>
+	</div>
+	<div class="chat-area">
+
+	</div>
+	<script type="text/javascript">
+	$(function(){
+		$(".input").val("");
+	});
+	var userid = "用户名";
+	function onC(){
+		if ($(".input").val()!="") {
+			document.getElementById("chat").innerHTML+= userid+ ":"+ $(".input").val()+ "<br/>";
+			$(".input").val("");
+		}
+	}
+	</script>
+</body>
+</html>

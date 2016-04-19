@@ -1,0 +1,381 @@
+.main-top {
+  height: 210px;
+  margin: 0 auto;
+  background: url("../images/cover-bg.jpg");
+  position: relative;
+}
+.main-top .main-top-cover {
+  background-color: #000;
+  opacity: 0.5;
+  height: 210px;
+  z-index: 9;
+}
+.main-top .top-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-top .top-container .top-left {
+  float: left;
+  left: 120px;
+  width: 400px;
+  color: #FFF;
+}
+.main-top .top-container .top-left h1 {
+  margin-left: 200px;
+  line-height: 200px;
+  position: relative;
+  z-index: 10;
+}
+.main-top .top-container .top-right {
+  width: 800px;
+  height: 200px;
+  float: right;
+}
+.main-top .top-container .top-right ul {
+  z-index: 10;
+  display: block;
+  float: right;
+  position: relative;
+  font-size: 16px;
+  color: #FFF;
+  top: 120px;
+  right: 0;
+  line-height: 2em;
+  text-align: center;
+}
+.main-top .top-container .top-right ul li {
+  display: block;
+  float: right;
+  margin-right: 60px;
+}
+.main-top .top-container .top-right ul li h5 {
+  font-size: 20px;
+}
+.main {
+  background-color: #eee;
+}
+.main-content {
+  height: 1000px;
+  width: 1200px;
+  margin: 0 auto;
+  display: table;
+  position: relative;
+}
+.main-content .side-list {
+  width: 200px;
+  float: left;
+  position: relative;
+  top: -130px;
+}
+.main-content .side-list .head {
+  margin: 0 auto;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 5px solid rgba(220, 220, 220, 0.2);
+}
+.main-content .side-list .list {
+  text-align: center;
+  padding-top: 10px;
+}
+.main-content .side-list .list ul {
+  font-size: 14px;
+  width: 100px;
+  margin: 0 auto;
+}
+.main-content .side-list .list ul li {
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  color: #000;
+  border-bottom: 1.5px solid #cdcdcd;
+  text-align: left;
+}
+.main-content .side-list .list ul li a {
+  padding-left: 15px;
+}
+.main-content .side-list .list ul li:hover a {
+  opacity: 0.5;
+}
+.main-content .side-list .list ul li:active a {
+  color: #FF0000;
+}
+.main-content .course-content {
+  display: block;
+  width: 1000px;
+  position: absolute;
+  left: 200px;
+}
+.main-content .course-content .content .content-top {
+  font-size: 10px;
+  height: 40px;
+  width: 1000px;
+  float: left;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 15px 0;
+}
+.main-content .course-content .content .content-top ul {
+  font-size: 14px;
+}
+.main-content .course-content .content .content-top ul li {
+  display: block;
+  float: left;
+  line-height: 40px;
+  padding: 7px 0;
+  margin: 0 15px;
+}
+.main-content .course-content .content .content-top ul li:hover {
+  border-bottom: 2px solid #FF0000;
+}
+.main-content .course-content .content .content-top ul li:hover a {
+  color: #ff0000;
+}
+.main-content .course-content .content .content-top ul .current {
+  border-bottom: 2px solid #FF0000;
+}
+.main-content .course-content .content .content-top ul .current a {
+  color: #ff0000;
+}
+.main-content .course-content .content .content-list {
+  position: relative;
+  display: inline-block;
+  width: 1000px;
+}
+.main-content .course-content .content .content-list .none {
+  display: none;
+}
+.main-content .course-content .content .content-list .recent-course {
+  width: 1000px;
+  padding-top: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-content .course-content .content .content-list .recent-course ul {
+  position: relative;
+}
+.main-content .course-content .content .content-list .recent-course ul li {
+  width: 1000px;
+  height: 110px;
+  margin: 0 15px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-date {
+  color: #777777;
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 0px 41.5px 20px 21.5px;
+  position: relative;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-date .first-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #FF0000;
+  display: block;
+  position: absolute;
+  right: -7.5px;
+  top: -7.5px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-date .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-date b {
+  font-size: 17px;
+  display: block;
+  font-weight: normal;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-date em {
+  font-style: normal;
+  display: block;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo {
+  height: 90px;
+  float: left;
+  width: 870px;
+  padding-bottom: 20px;
+  border-left: 1.5px solid #000;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .thumbnail {
+  height: 90px;
+  width: 180px;
+  display: block;
+  float: left;
+  padding-left: 40px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .caption {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  display: block;
+  float: left;
+  width: 510px;
+  position: relative;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .caption h3 {
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .caption .percent {
+  background-color: #fff;
+  font-size: 10px;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 5px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .caption .studyed {
+  background-color: #FF0000;
+  width: 300px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  top: 35px;
+  border-radius: 5px;
+  z-index: 30;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .caption .study-all {
+  background-color: #a0a0a0;
+  width: 500px;
+  height: 5px;
+  display: block;
+  top: 35px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .caption .caption span {
+  padding-right: 30px;
+  line-height: 50px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .study-btn span {
+  display: block;
+  float: left;
+  font-size: 10px;
+  height: 17px;
+  width: 55px;
+  text-align: center;
+  line-height: 17px;
+  color: #FF0000;
+  border: 1px solid #FF0000;
+  margin-top: 70px;
+}
+.main-content .course-content .content .content-list .recent-course ul li .course-ifo .study-btn span:hover {
+  color: #fff;
+  background-color: #FF0000;
+}
+.main-content .course-content .content .content-list .my-class,
+.main-content .course-content .content .content-list .my-favorite {
+  width: 1000px;
+  padding-top: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-content .course-content .content .content-list .my-class .className-list,
+.main-content .course-content .content .content-list .my-favorite .className-list {
+  display: block;
+  padding-left: 15px;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one {
+  display: block;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo {
+  height: 90px;
+  float: left;
+  width: 870px;
+  padding-bottom: 20px;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .thumbnail,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .thumbnail {
+  height: 90px;
+  width: 180px;
+  display: block;
+  float: left;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .caption,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .caption {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  display: block;
+  float: left;
+  width: 510px;
+  position: relative;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .caption h3,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .caption h3 {
+  display: block;
+  position: relative;
+  margin-bottom: 45px;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .caption .percent,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .caption .percent {
+  background-color: #fff;
+  font-size: 10px;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 5px;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .caption .studyed,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .caption .studyed {
+  background-color: #FF0000;
+  width: 300px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  top: 35px;
+  border-radius: 5px;
+  z-index: 30;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .caption .study-all,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .caption .study-all {
+  background-color: #a0a0a0;
+  width: 500px;
+  height: 5px;
+  display: block;
+  top: 35px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .caption .caption span,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .caption .caption span {
+  padding-right: 30px;
+  line-height: 50px;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .study-btn span,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .study-btn span {
+  display: block;
+  float: right;
+  font-size: 10px;
+  height: 17px;
+  width: 55px;
+  text-align: center;
+  line-height: 17px;
+  color: #FF0000;
+  border: 1px solid #FF0000;
+  margin-top: 70px;
+}
+.main-content .course-content .content .content-list .my-class .className-list .className-one ul .courseName-one .course-ifo .study-btn span:hover,
+.main-content .course-content .content .content-list .my-favorite .className-list .className-one ul .courseName-one .course-ifo .study-btn span:hover {
+  color: #fff;
+  background-color: #FF0000;
+}

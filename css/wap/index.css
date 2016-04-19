@@ -1,0 +1,82 @@
+.dock {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  border-top: solid 1px #D0D6D9;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  transition: transform 0.5s;
+  z-index: 99;
+}
+.dock .active a {
+  color: #DC143C;
+}
+.dock li {
+  float: left;
+  width: 33%;
+  height: 50px;
+  line-height: 50px;
+}
+.dock li a {
+  display: block;
+  text-align: center;
+}
+.main {
+  padding-bottom: 50px;
+}
+.main .list .inactive {
+  display: none;
+}
+.main .list .nav {
+  font-family: "黑体";
+  font-size: 18px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background: #171717;
+}
+.main .list .nav-all .nav-list {
+  height: 40px;
+  width: 100%;
+  border-bottom: solid 1px #D0D6D9;
+  overflow: hidden;
+}
+.main .list .nav-all .nav-list a {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  display: block;
+  color: black;
+}
+.course-one {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+}
+.course-one .thumbnail {
+  width: 40%;
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.course-one .caption {
+  width: 40%;
+  float: left;
+  padding: 5px;
+}
+.course-one .caption h3 {
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px 0;
+}
+.course-one .caption p {
+  padding: 5px 0;
+}

@@ -1,0 +1,379 @@
+.main-top{
+  height: 210px;
+  margin: 0 auto;
+  background:url("../images/cover-bg.jpg");
+  position: relative;
+  .main-top-cover{
+    background-color: #000;
+    opacity: 0.5;
+    height: 210px;
+    z-index: 9;
+  }
+  .top-container{
+    width: 1200px;
+    margin: 0 auto;
+    .top-left{
+      float: left;
+      left: 120px;
+      width: 400px;
+      color: #FFF;
+      h1{
+        margin-left: 200px;
+        line-height: 200px;
+        position: relative;
+        z-index: 10;
+      }
+    }
+    .top-right{
+      width: 800px;
+      height: 200px;
+      float: right;
+      ul{
+        z-index: 10;
+        display: block;
+        float: right;
+        position: relative;
+        font-size: 16px;
+        color: #FFF;
+        top: 120px;
+        right:0;
+        line-height: 2em;
+        text-align: center;
+        li{
+          display: block;
+          float: right;
+          margin-right: 60px;
+          h5{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.main{
+  background-color: #eee;
+}
+.main-content{
+  height: 1000px;
+  width: 1200px;
+  margin: 0 auto;
+  display: table;
+  position: relative;
+  .inactive{
+    //display: none;
+  }
+
+  .side-list{
+    width: 200px;
+    float: left;
+    position: relative;
+    top: -130px;
+    .head{
+      margin: 0 auto;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      -o-border-radius: 150px;
+      border-radius: 150px;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border: 5px solid rgba(220,220,220,0.2);
+
+    }
+    .list{
+      text-align: center;
+      padding-top: 10px;
+      ul{
+        font-size: 14px;
+        width: 100px;
+        margin: 0 auto;
+        li{
+          height: 50px;
+          width: 100px;
+          line-height: 50px;
+          color: #000;
+          border-bottom: 1.5px solid #cdcdcd;
+          text-align: left;
+          a{
+            padding-left: 15px;
+          }
+          &:hover{
+            a{
+              opacity: 0.5;
+            }
+          }
+          &:active{
+            a{
+              color: #FF0000;
+            }
+          }
+        }
+      }
+    }
+  }
+  .course-content{
+    display: block;
+    width: 1000px;
+    position: absolute;
+    left: 200px;
+    .content{
+      .content-top{
+        font-size: 10px;
+        height: 40px;
+        width:1000px;
+        float:left;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 15px 0;
+        ul{
+          font-size: 14px;
+          li{
+            display: block;
+            float: left;
+            line-height: 40px;
+            padding: 7px 0;
+            margin: 0 15px;
+            &:hover{
+              border-bottom: 2px solid #FF0000;
+              a{color: #ff0000;}
+            }
+          }
+          .current{
+            border-bottom: 2px solid #FF0000;
+            a{color: #ff0000;}
+          }
+        }
+      }
+      .content-list{
+        position: relative;
+        display: inline-block;
+        width: 1000px;
+        .none{
+          display: none;
+        }
+        .recent-course{
+          width: 1000px;
+          padding-top: 10px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          ul{
+            position: relative;
+            li{
+              width: 1000px;
+              height: 110px;
+              margin: 0 15px;
+              .course-date{
+                color: #777777;
+                display: block;
+                float: left;
+                text-align: center;
+                padding: 0px 41.5px 20px 21.5px;
+                position: relative;
+                .first-dot{
+                  width: 15px;
+                  height: 15px;
+                  border-radius: 15px;
+                  background-color: #FF0000;
+                  display: block;
+                  position: absolute;
+                  right: -7.5px;
+                  top: -7.5px;
+                }
+                .dot{
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 10px;
+                  background-color: #000;
+                  display: block;
+                  position: absolute;
+                  right: -5px;
+                  top: -5px;
+                }
+                b{
+                  font-size: 17px;
+                  display: block;
+                  font-weight: normal;
+                }
+                em{
+                  font-style: normal;
+                  display: block;
+                }
+              }
+              .course-ifo {
+                height: 90px;
+                float: left;
+                width: 870px;
+                padding-bottom: 20px;
+                border-left: 1.5px solid #000;
+                .thumbnail{
+                  height: 90px;
+                  width: 180px;
+                  display: block;
+                  float: left;
+                  padding-left: 40px;
+                }
+                .caption{
+                  padding-left: 10px;
+                  margin-bottom: 10px;
+                  display: block;
+                  float: left;
+                  width: 510px;
+                  position: relative;
+                  h3{
+                    display: block;
+                    position: relative;
+                    margin-bottom: 45px;
+                  }
+                  .percent{
+                    background-color: #fff;
+                    font-size: 10px;
+                    position: absolute;
+                    top: 20px;
+                    left: 300px;
+                    height: 16px;
+                    line-height: 16px;
+                    border-radius: 5px;
+                  }
+                  .studyed{
+                    background-color: #FF0000;
+                    width: 300px;
+                    height: 5px;
+                    display: block;
+                    position: absolute;
+                    top: 35px;
+                    border-radius: 5px;
+                    z-index: 30;
+                  }
+                  .study-all{
+                    background-color: #a0a0a0;
+                    width: 500px;
+                    height: 5px;
+                    display: block;
+                    top: 35px;
+                    border-radius: 5px;
+                    position: absolute;
+                    z-index: 10;
+                  }
+                  .caption span{
+                    padding-right: 30px;
+                    line-height: 50px;
+                  }
+                }
+                .study-btn span{
+                  display: block;
+                  float: left;
+                  font-size: 10px;
+                  height: 17px;
+                  width: 55px;
+                  text-align: center;
+                  line-height: 17px;
+                  color: #FF0000;
+                  border: 1px solid #FF0000;
+                  margin-top: 70px;
+                  &:hover{
+                    color: #fff;
+                    background-color: #FF0000;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .my-class,.my-favorite {
+          width: 1000px;
+          padding-top: 10px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          .className-list{
+            display: block;
+            padding-left: 15px;
+            .className-one{
+              display: block;
+              ul{
+                .courseName-one{
+                  .course-ifo {
+                    height: 90px;
+                    float: left;
+                    width: 870px;
+                    padding-bottom: 20px;
+                    .thumbnail{
+                      height: 90px;
+                      width: 180px;
+                      display: block;
+                      float: left;
+                    }
+                    .caption{
+                      padding-left: 10px;
+                      margin-bottom: 10px;
+                      display: block;
+                      float: left;
+                      width: 510px;
+                      position: relative;
+                      h3{
+                        display: block;
+                        position: relative;
+                        margin-bottom: 45px;
+                      }
+                      .percent{
+                        background-color: #fff;
+                        font-size: 10px;
+                        position: absolute;
+                        top: 20px;
+                        left: 300px;
+                        height: 16px;
+                        line-height: 16px;
+                        border-radius: 5px;
+                      }
+                      .studyed{
+                        background-color: #FF0000;
+                        width: 300px;
+                        height: 5px;
+                        display: block;
+                        position: absolute;
+                        top: 35px;
+                        border-radius: 5px;
+                        z-index: 30;
+                      }
+                      .study-all{
+                        background-color: #a0a0a0;
+                        width: 500px;
+                        height: 5px;
+                        display: block;
+                        top: 35px;
+                        border-radius: 5px;
+                        position: absolute;
+                        z-index: 10;
+                      }
+                      .caption span{
+                        padding-right: 30px;
+                        line-height: 50px;
+                      }
+                    }
+                    .study-btn span{
+                      display: block;
+                      float: right;
+                      font-size: 10px;
+                      height: 17px;
+                      width: 55px;
+                      text-align: center;
+                      line-height: 17px;
+                      color: #FF0000;
+                      border: 1px solid #FF0000;
+                      margin-top: 70px;
+                      &:hover{
+                        color: #fff;
+                        background-color: #FF0000;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

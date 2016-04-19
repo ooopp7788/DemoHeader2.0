@@ -1,0 +1,179 @@
+.main .player {
+  height: 645px;
+  background-color: #222;
+}
+.main .player .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 600px;
+}
+.main .player .container .title {
+  padding: 10px;
+  color: #cdcdcd;
+}
+.main .player .container .player-box .player-left {
+  width: 930px;
+  height: 560px;
+  float: left;
+}
+.main .player .container .player-box .player-right {
+  width: 250px;
+  height: 560px;
+  float: right;
+  background-color: #fff;
+  margin: 0 10px;
+  overflow: auto;
+}
+.main .player .container .player-box .player-right .course-all {
+  width: 230px;
+  float: left;
+  overflow: hidden;
+  background-color: #ededed;
+}
+.main .player .container .player-box .player-right .course-all ul {
+  float: left;
+  width: 230px;
+}
+.main .player .container .player-box .player-right .course-all ul li {
+  width: 200px;
+  height: 120px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+}
+.main .player .widgets {
+  width: 1200px;
+  margin: 10px auto;
+  color: #fff;
+  font-family: "Boring Boron";
+  font-size: 14px;
+}
+.main .player .widgets span {
+  float: left;
+  height: 20px;
+  margin: 0 5px;
+}
+.main .player .widgets .upvote,
+.main .player .widgets .favorite {
+  margin: 0 25px;
+  float: left;
+}
+.main .ifo {
+  background-color: #eeeeee;
+  display: block;
+}
+.main .ifo .container {
+  width: 1200px;
+  display: table;
+  margin: 0 auto;
+  padding: 10px;
+}
+.main .ifo .container .ifo-left {
+  width: 350px;
+  display: table;
+  float: left;
+}
+.main .ifo .container .ifo-left .info-col1 {
+  line-height: 20px;
+  display: block;
+  float: left;
+  padding-left: 20px;
+  width: 170px;
+}
+.main .ifo .container .ifo-left .info-col1 .ico {
+  display: inline-block;
+  top: 3px;
+}
+.main .ifo .container .ifo-left .info-col2 {
+  line-height: 2em;
+  width: 120px;
+  padding-right: 10px;
+  float: right;
+  display: block;
+}
+.main .ifo .container .ifo-right {
+  width: 780px;
+  float: left;
+  padding: 0 30px;
+  border-left: 1px solid #999;
+}
+.main .ifo .container .ifo-right .comment-sub {
+  display: inline-block;
+  float: right;
+  padding-top: 5px;
+}
+.main .ifo .container .ifo-right .comment-sub input {
+  display: block;
+  background-color: #0f99da;
+  outline: none;
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+.main .ifo .container .ifo-right .comment-text h4 {
+  padding: 10px;
+  border-bottom: 1px solid #999;
+}
+.main .ifo .container .ifo-right .comment-text .default-text {
+  border: 1px solid #999;
+  max-width: 780px;
+  min-width: 780px;
+  max-height: 100px;
+  min-height: 100px;
+  margin-top: 10px;
+}
+.course-list {
+  padding: 15px 0;
+  width: 1200px;
+  margin: 0 auto;
+  height: 200px;
+}
+.course-list .prev-btn {
+  width: 56px;
+  height: 87px;
+  float: left;
+  padding: 31px 0;
+}
+.course-list .prev-btn img {
+  width: 56px;
+  height: 87px;
+}
+.course-list .next-btn {
+  width: 56px;
+  height: 87px;
+  float: right;
+  overflow: hidden;
+  padding: 31px 0;
+}
+.course-list .next-btn img {
+  width: 56px;
+  height: 87px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.course-list .course-all {
+  height: 150px;
+  width: 1020px;
+  margin: 0 30px;
+  float: left;
+  overflow: hidden;
+  background-color: #ededed;
+}
+.course-list .course-all ul {
+  height: 150px;
+  margin: 0 10px;
+  float: left;
+}
+.course-list .course-all ul li {
+  width: 200px;
+  height: 120px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 20px;
+  display: block;
+  float: left;
+}

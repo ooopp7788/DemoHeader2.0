@@ -1,0 +1,196 @@
+.header .content {
+  min-width: 1280px;
+  height: 60px;
+  background-color: #dcdcdc;
+  position: relative;
+}
+.header .content .logo {
+  margin-left: 40px;
+  width: 450px;
+  height: 50px;
+  float: left;
+  padding-top: 5px;
+}
+.header .content .top {
+  font-size: 14px;
+  float: left;
+  display: block;
+  font-weight: bold;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+}
+.header .content .top li {
+  display: block;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+}
+.header .content .top li:hover {
+  background-color: #a0a0a0;
+  color: #fff;
+}
+.header .content .top li:hover a {
+  color: #fff;
+}
+.header .content .top li a,
+.header .content .top li span {
+  padding: 20.5px 15px;
+  cursor: pointer;
+}
+.header .content .top .logo {
+  height: 60px;
+  line-height: 60px;
+  background-color: #a0a0a0;
+  width: 60px;
+  border-radius: 60px;
+  margin-left: 40px;
+  display: block;
+  float: left;
+}
+.header .content .search-panel {
+  float: right;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+}
+.header .content .search-panel input {
+  height: 20px;
+  width: 0px;
+  float: left;
+  margin: 20px 0;
+  border: none;
+  background-color: #dcdbdc;
+  border-bottom: 1.5px solid #828282;
+  text-align: center;
+  color: #828282;
+}
+.header .content .search-panel span {
+  margin: 22px 15px;
+  float: right;
+  cursor: pointer;
+}
+.header .content .login-panel {
+  display: inline;
+  float: right;
+  margin-right: 40px;
+  line-height: 60px;
+  color: #333;
+}
+.header .content .login-panel .inactive {
+  display: none;
+}
+.header .content .login-panel .logpre ul {
+  color: #0e92d0;
+  font-weight: bold;
+}
+.header .content .login-panel .logpre ul li {
+  color: #000;
+  display: block;
+  float: left;
+}
+.header .content .login-panel .logpre ul li a {
+  padding: 20.5px 15px;
+}
+.header .content .login-panel .logpre ul li:hover {
+  background-color: #a0a0a0;
+  color: #fff;
+}
+.header .content .login-panel .logpre ul li:hover a {
+  color: #fff;
+}
+.header .content .login-panel .logpre ul li span {
+  display: block;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.header .content .login-panel .logafter ul {
+  font-weight: bold;
+}
+.header .content .login-panel .logafter ul a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 16px;
+}
+.header .content .login-panel .logafter ul a span {
+  display: inline-block;
+}
+.header .content .login-panel .logafter ul a:hover {
+  background-color: #a0a0a0;
+  color: #fff;
+}
+.header .content .login-panel .logafter ul li {
+  text-align: center;
+  height: 60px;
+  float: left;
+  line-height: 60px;
+  overflow: hidden;
+  display: block;
+}
+.login-mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 98;
+}
+.login-mask .login-container {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  left: 50%;
+  top: 50%;
+}
+.login-mask .login-container .login-window {
+  border: none;
+  background-color: #fcf8e3;
+  opacity: 1;
+  position: relative;
+  width: 500px;
+  height: 350px;
+  z-index: 99;
+  margin: 0 auto;
+  left: -50%;
+  top: -50%;
+  overflow: hidden;
+}
+.login-mask .login-container .login-window .login-close {
+  display: block;
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.login-mask .login-container .login-window .login-close:hover {
+  color: #fff;
+  background-color: #0e92d0;
+}
+.login-mask .login-container .login-window form {
+  position: relative;
+  margin: 95px auto;
+  color: #000;
+  width: 240px;
+  line-height: 50px;
+}
+.login-mask .login-container .login-window form input {
+  width: 150px;
+  border: 1px solid #777;
+  padding: 3px;
+  color: #777;
+}
+.login-mask .login-container .login-window form a,
+.login-mask .login-container .login-window form a:hover {
+  color: #000;
+}
+.login-mask .login-container .login-window form .submit-btn {
+  width: 60px;
+  background-color: #0e92d0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 4em;
+  margin-right: 30px;
+}

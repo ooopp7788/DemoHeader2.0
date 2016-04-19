@@ -1,0 +1,132 @@
+.nav{
+  .container{
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 0 auto;
+    .nav-inner{
+      width: 100%;
+      border: 1px solid #000;
+      ul{
+        display: inline-block;
+        line-height: 50px;
+        color: #000;
+        text-align: center;
+        li{
+          display: block;
+          float: left;
+          padding: 0 15px;
+          margin: 0 10px;
+        }
+        .active{
+          background-color: #777777;
+          a{
+            color: #FFF;
+          }
+        }
+      }
+    }
+  }
+}
+.search-content{
+  width: 100%;
+  .list-box{
+    width: 1200px;
+    margin: 0 auto;
+    ul{
+      display: table;
+      width: 100%;
+      li{
+        width: 100%;
+        padding: 30px;
+        height: 160px;
+        .thumbnail{
+          width: 280px;
+          height: 160px;
+          overflow: hidden;
+          float: left;
+          img{
+            width: 280px;
+            height: 160px;
+          }
+        }
+        .caption{
+          background-color: #eee;
+          overflow: hidden;
+          height: 160px;
+          color: #000;
+          width: 880px;
+          padding-left: 1em;
+          float: right;
+          .video-ifo{
+            text-overflow: ellipsis;
+            overflow:hidden;
+            width: 880px;
+            height: 60px;
+            line-height: 40px;
+          }
+          b{
+            font-size: 14px;
+          }
+          span{
+            font-size: 12px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+body{
+  background-color: #eee;
+}
+.search-top{
+  background-color: #eee;
+  border-bottom: 1px solid #cdcdcd;
+  .container{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+      .navbar-search{
+        margin: 0 auto;
+        height: 30px;
+        width: 830px;
+        padding-top: 140px;
+        .search-query {
+          border: 2px solid #ccc;
+          background-color: #fff;
+          color: #555;
+          font-size: 12px;
+          line-height: 30px;
+          padding: 0 15px;
+          height: 28px;
+          width: 600px;
+          float: left;
+          border-radius: 5px;
+        }
+        .search-button{
+          font-size: 17px;
+          border: 2px solid #ccc;
+          background: #dcdcdc;
+          color: #000;
+          margin-left: 60px;
+          height: 30px;
+          padding: 0 30px;
+          float: left;
+          box-shadow: none;
+          display: block;
+          vertical-align: middle;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 5px;
+          &:hover{
+            color: #fff;
+            background-color: #a0a0a0;
+          }
+          &:active{
+            background-color: #777;
+          }
+        }
+      }
+
+  }
+}

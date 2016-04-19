@@ -1,0 +1,10 @@
+.mouse_animation {
+  height: 500px;
+  width: 100%;
+  background: url("../images/mouse_bg.png") no-repeat;
+}
+.star_animation {
+  height: 500px;
+  width: 100%;
+  background-color: #eee;
+}
